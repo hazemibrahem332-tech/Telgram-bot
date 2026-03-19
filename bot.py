@@ -6,8 +6,8 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 from docx import Document
 
-TOKEN = "8645745797:AAGUdDzv5Q6-gJGNyGO33cDtBrqjlQ6up_U"
-
+import os
+TOKEN = os.getenv("TOKEN")
 # المستخدمين المسموح لهم
 ALLOWED_USERS = [
 5635911252,872708926,7057742713,7835441428,1176367759,
